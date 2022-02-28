@@ -1,0 +1,16 @@
+version: '3'
+services:
+  ssosync:
+    build: ./
+    command:
+      - -u
+      - <YOUR_GOOGLE_ADMIN_EMAIL>
+      - -g
+      - <YOUR_GOOGLE_GROUPS>
+      - -m
+      - <YOUR_GOOGLE_USERS>
+    volumes:
+      - ./credentials.json:/credentials.json
+    environment:
+      SSOSYNC_SCIM_ACCESS_TOKEN: <YOUR_TOKEN>
+      SSOSYNC_SCIM_ENDPOINT: <YOUR_ENDPOINT>
