@@ -2,7 +2,7 @@
 
 ## References
 
-- [SSO Sync]:https://github.com/awslabs/ssosync
+- [SSO Sync](https://github.com/awslabs/ssosync)
 
 ## Usage
 
